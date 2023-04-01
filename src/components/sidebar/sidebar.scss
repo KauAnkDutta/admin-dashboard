@@ -1,0 +1,96 @@
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid rgb(241, 239, 239);
+    min-height: 100vh;
+    background-color: white;
+    
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            font-size: 20px;
+            font-weight: bolder;
+            color: rgb(99, 67, 243);
+        }
+    }
+    
+    hr{
+        height: 0;
+        border: 0.5px solid rgb(241, 239, 239);
+    }
+
+    .center{
+        padding-left: 10px;
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .title{
+                font-size: 10px;
+                font-weight: bold;
+                color: #999;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            li{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+
+                .icon{
+                    margin-right: 10px;
+                    font-size: 18px;
+                    color: rgb(84, 51, 227);
+                }
+
+                &:hover{
+                    background-color: #ece8ff;
+                }
+
+                span{
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 5px;
+
+        .color_option{
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            // border: 1px solid #7451f8;
+            cursor: pointer;
+            margin: 5px;
+
+            &:nth-child(1){
+                background-color: whitesmoke;
+                border: 1px solid #a18ced;
+            }
+            &:nth-child(2){
+                background-color: #333;
+            }
+        }
+    }
+
+    .title{
+        font-size: 10px;
+        font-weight: bold;
+        color: #999;
+        margin-top: 10px;
+        left: 10px;
+        position: relative;
+    }
+}

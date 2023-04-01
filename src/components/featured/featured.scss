@@ -1,0 +1,84 @@
+.featured{
+    flex: 3;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 5px;
+    // border-radius: 5px;
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: grey;
+
+        .title{
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    .bottom{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .featured_chart{
+            width: 100px;
+            height: 100px;
+        }
+
+        .title{
+            font-size: 18px;
+            font-weight: 500; 
+            color: grey;
+        }
+        .amount{
+            font-size: 30px;
+            font-weight: 300;
+        }
+        .desc{
+            font-weight: 400;
+            font-size: 14px;
+            color: gray;
+            text-align: center;
+        }
+
+        .summary{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .item{
+              text-align: center;  
+
+              .item_title{
+                font-weight: bold;
+                color: gray;
+              }
+
+              .item_result{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                font-size: 14px;
+
+                .result_amt{
+                    font-weight:700;
+                }
+
+                &.positive{
+                    color: green;
+                }
+
+                &.negative{
+                    color: rgb(192, 69, 69);
+                }
+              }
+            }
+        }
+    }
+}

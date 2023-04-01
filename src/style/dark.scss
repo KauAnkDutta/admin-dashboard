@@ -1,0 +1,84 @@
+.dark{
+    background-color: rgb(39, 38, 38);
+    color: rgb(188, 184, 184);
+
+    .chart_grid{
+        stroke: rgba(228, 225, 225, 0.219);
+    }
+
+    .table{
+        background-color: rgb(59, 58, 58);
+
+        .tableCell{
+            color: rgb(153, 147, 147);
+        }
+    }
+
+    .navbar{
+        color: rgb(153, 147, 147);
+        border-color: #333;
+
+        .search{
+            border-color: gray;
+        }
+    }
+
+    .sidebar{
+        background-color: rgb(39, 38, 38);
+        border-color: #333;
+
+        .top{
+            .logo{
+              color: #999;  
+            }
+        }
+        hr{
+            border-color: #333;
+        }
+
+        ul{
+            li{
+               &:hover{
+                    background-color: rgba(67, 65, 65, 0.5);
+               } 
+
+               .icon{
+                    color: rgb(191, 189, 189);
+               }
+            }
+        }
+    }
+
+    .datatable{
+        .datagrid{
+            color: rgb(236, 229, 229);
+            border: none;
+        }
+
+        .view_btn,.delete_btn{
+            color: rgb(165, 162, 162);
+            border: none;
+
+            &:hover{
+                background-color: rgba(67, 65, 65, 0.5);
+           }
+        }
+
+        .cellWithStatus{
+            color: rgb(165, 162, 162);
+        }
+
+        .datatable_title{
+            .datatable_link{
+                background: none;
+                border: 1px solid rgba(3, 135, 3, 0.6);
+                color: rgb(5, 170, 5);
+                
+            }
+        }   
+    }
+
+    input{
+        background-color: transparent;
+    }
+}
