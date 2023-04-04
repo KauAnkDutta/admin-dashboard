@@ -7,7 +7,11 @@ import {Link} from 'react-router-dom';
 
 
 export default function Datatable() {
-    const [data, setData] = useState(userRows)
+    const [data, setData] = useState(userRows);
+
+    const deleteHandler = (id) => {
+        setData(data.filter(item => item.id !== id))
+    }
 
     const actionColumn = [
         {
@@ -21,7 +25,7 @@ export default function Datatable() {
                             <div className="view_btn">View</div>
                         </Link>
 
-                        <div className="delete_btn">
+                        <div className="delete_btn" onClick={() => deleteHandler(params.row.id)}>
                             Delete
                         </div>
                     </div>
@@ -40,7 +44,7 @@ export default function Datatable() {
             </div>
         <DataGrid
             className='datagrid'
-            rows={userRows}
+            rows={data}
             columns={userColumns.concat(actionColumn)}
             pageSize={9}
             rowsPerPageOptions={[9]}
